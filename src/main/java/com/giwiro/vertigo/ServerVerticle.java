@@ -27,7 +27,7 @@ public class ServerVerticle extends AbstractVerticle{
         // Create a router object.
         JsonObject config = config();
         Router router = Router.router(vertx);
-        System.out.println("config" + config);
+        System.out.println("config: " + config);
         // Body parser
         router.route().handler(BodyHandler.create());
         DatabaseGateway database = new Database(vertx, config);

@@ -17,5 +17,6 @@ public class AuthModule {
 
     private void setRoutes(Router router) {
         router.post("/user/auth").handler(this.controller::authenticateUser);
+        router.post("/user/register").handler(this.controller::registerUser);
     }
 }

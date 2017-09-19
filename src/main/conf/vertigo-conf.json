@@ -1,5 +1,6 @@
 {
   "http.port": 8080,
   "db_name": "vertigo",
-  "connection_string": "mongodb://localhost:27017"
+  "connection_string": "mongodb://localhost:27017",
+  "useObjectId": true
 }
